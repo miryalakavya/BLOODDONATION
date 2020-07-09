@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+  
+<head>
+    
+<title>Blood Donation |Donars</title>
+    
+<link rel="stylesheet" href="./css/style.css">
+    
+<link rel="shortcut icon" href="download.png" type="image/png">
+  
+</head>
+  
+<body>
+    
+<script type="text/javascript">
+function Wrong()
+{
+	if(document.getElementById("dpBloodGroup").value=='Select')
+	{
+		alert("Please select blood group");
+		document.getElementById("dpBloodGroup").focus();
+		return false;
+        }
+        if (document.getElementById("dpCountry").value == 'Select') 
+        {
+        alert("Please select country");
+        document.getElementById("dpCountry").focus();
+        return false;
+        }
+	if(document.getElementById("dpState").value=='Select')
+	{
+		alert("Please select state");
+		document.getElementById("dpState").focus();
+		return false;
+	}
+	if(document.getElementById("dpDistrict").value=='Select')
+	{
+		alert("Please select district");
+		document.getElementById("dpDistrict").focus();
+		return false;
+	}  
+       
+     
+return true;
+        }
+       function clear()
+
+       {
+              
+                alert("Reset done");
+          
+       }
+    
+</script> 
+<header>
+    
+<div id="yes">
+           
+<div id="branding">
+      
+<h1><img src="download.png" width="20%" style="margin-left: 35px"></h1>
+    
+</div>
+    
+<nav>
+      
+<ul>
+          
+<li><a href="index.html">HOME</a></li>
+          
+<li><a href="Why to give blood.html">WHY TO GIVE BLOOD</a></li>
+  
+<li><a href="Registration.html">REGISTER</a></li>                 
+<li><a href="our camps.html">OUR CAMPS</a></li>
+          
+<li><a href="gallery.html">GALLERY</a></li>
+<li class="current"><a href="#">DONARS</a></li>          
+<li><a href="sign in.html">SIGN IN</a></li>
+          
+<li><a href="about.html">ABOUT US</a></li>
+
+      
+</ul>
+    
+</nav>
+  
+</div>
+     
+</header>
+  
+<fieldset style="border-bottom-style: 3px solid double red ">
+          
+<legend>
+              
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search Donar</h2>
+</legend>
+
+<form method="post" style="border:1px solid #ccc" onsubmit=" return Wrong()"  onreset="return clear()" >
+  
+<div class="container">
+     
+      
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span id="dpBlood Group" style="color:red" >
+</span>
+<br/>
+</h1>
+
+
+<tr>
+<td width="129" height="30" class="contactheading">Blood Group</td>
+
+<ul>
+        <select name="dpBloodGroup" id="dpBloodGroup"  class="findbloodlistmenu" > 
+	<option value="Select">-----Select-----</option>
+	<option value="A+">A+</option>
+	<option value="A-">A-</option>
+	<option value="AB+">AB+</option>
+	<option value="AB-">AB-</option>
+	<option value="B+">B+</option>
+	<option value="B-">B-</option>
+	<option value="O+">O+</option>
+	<option value="O-">O-</option>
+
+</select></td>
+</tr></ul><br> 
+
+<tr>
+<td height="35" class="contactheading" width="129">Select Country</td>
+<ul>
+        <select name="dpCountry" id="dpCountry" class="findbloodlistmenu" >
+        <option value="Select">-----Select-----</option>
+	<option value="1|dpCountry">INDIA</option>
+
+</select></td>
+</tr></ul><br>   
+<tr>
+<td height="35" class="contactheading">Select State</td>
+<ul>    
+        <select name="dpState" id="dpState" class="findbloodlistmenu">
+	<option value="Select">-----Select-----</option>
+        <option value="1|dpState">AP</option>
+	<option value="2|dpState">Telangana</option>
+	
+</select></td>
+</tr></ul><br>
+<tr>
+<td height="35" class="contactheading">Select District</td>   
+<ul>
+        <select name="dpDistrict" id="dpDistrict" class="findbloodlistmenu">
+	<option value="Select">-----Select-----</option>        
+        <option value="1|dpDistrict">Nizamabad</option>
+	<option value="2|dpDistrict">Hyderabad</option>
+	<option value="3|dpDistrict">Rangareddy</option>
+	<option value="4|dpDistrict">Sangareddy</option>
+	<option value="5|dpDistrict">Medak</option>
+	<option value="6|dpDistrict">Kamareddy</option>
+        <option value="7|dpDistrict">Vijayawada</option>
+        <option value="8|dpDistrict">Kurnool</option>
+        <option value="9|dpDistrict">Godavari</option>
+
+</select></td>
+</tr></ul> <br>
+<button type="reset" class="cancelbtn">Reset</button>
+
+<button type="submit" class="signupbtn" onclick="fn()">submit</button>
+ 
+</div>
+
+</form>
+
+    
+<footer style="margin-top: 110px">
+   
+<div class="social">
+		
+<div class="heading">Follow Us</div>
+		
+<img src="./images/facebook.png" alt="Facebook" />
+		
+<img src="./images/twtter.png" alt="Twitter" />
+		
+<img src="./images/insta.png" alt="Instagram" />
+
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <p style="text-align:center;margin-left: 185px;">Blood Donation</p>
+ 
+	
+</footer>
+        
+  
+</body>
+
+</html>
